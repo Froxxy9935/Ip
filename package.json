@@ -1,0 +1,13 @@
+{
+  "name": "visitor-logger-backend",
+  "version": "1.0.0",
+  "description": "Backend to log visitor data from website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "express": "^4.18.2"
+  }
+}
