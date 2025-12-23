@@ -1,8 +1,10 @@
 
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
+const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
@@ -11,6 +13,7 @@ const TELEGRAM_BOT_TOKEN = '7716367578:AAGY4DAgFq5M77VGaBtRPOR0WvGiak-RP4E';
 // Replace with your chat ID after you get it
 const TELEGRAM_CHAT_ID = '5662731888';
 
+app.use(cors());
 app.use(express.json());
 
 // Helper to send message to Telegram
